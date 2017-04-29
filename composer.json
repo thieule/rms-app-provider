@@ -1,0 +1,22 @@
+{
+    "name": "thieule/rms-app-provider",
+    "type": "library",
+    "description": "RMS - APP - Service",
+    "homepage": "https://github.com/thieule/rms-app-provider",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Thieu Le",
+            "email": "quangthieuagu@gmail.com",
+            "homepage": "rms.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "RMS\\": "src/"
+        }
+    }
+}
