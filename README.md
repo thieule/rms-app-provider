@@ -22,6 +22,7 @@ Add to `composer.json` manually:
 ### Modify the bootstrap flow (```bootstrap/app.php``` file)
 
 ```php
+$app->register(RMS\GoAopServiceProvider::class);
 $app->register(RMS\RootServiceProvider::class);
 ```
 

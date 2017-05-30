@@ -2,6 +2,8 @@
 
 namespace RMS\Providers;
 use Illuminate\Support\ServiceProvider;
+use App\Aspect\LoggingAspect;
+use Psr\Log\LoggerInterface;
 /**
  * Class RootServiceProvider
  * @package RMS\Providers
@@ -21,5 +23,10 @@ class RootServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->app->singleton(LoggingAspect::class, function ($app) {
+            return new LoggingAspect($app->make(LoggerInterface::class));
+        });
+
+        $this->app->tag([LoggingAspect::class], 'goaop.aspect');
     }
 }
