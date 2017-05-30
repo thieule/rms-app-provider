@@ -2,7 +2,7 @@
 
 namespace RMS\Providers;
 use Illuminate\Support\ServiceProvider;
-use App\Aspect\LoggingAspect;
+use RMS\Aspect\LoggingAspect;
 use Psr\Log\LoggerInterface;
 /**
  * Class RootServiceProvider

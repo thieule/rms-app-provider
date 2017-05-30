@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Aspect;
+namespace RMS\Aspect;
 
 use Go\Aop\Aspect;
 use Go\Aop\Intercept\MethodInvocation;
